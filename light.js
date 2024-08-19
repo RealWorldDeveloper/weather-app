@@ -10,7 +10,7 @@ const searchBtn = document.getElementById('serach-btn');
 
 
 async function displayData(cityname) {
-  const promise = await fetch((`http://api.weatherapi.com/v1/current.json?key=f0d57e9008e747adba015149241908&q=London&aqi=no
+  const promise = await fetch((`http://api.weatherapi.com/v1/current.json?key=f0d57e9008e747adba015149241908&q={cityname}&aqi=no
   `));
   return await promise.json()
 }
