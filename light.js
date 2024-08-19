@@ -20,6 +20,7 @@ async function displayData(cityname) {
 
 searchBtn.addEventListener('click', async() => {
   const userInput = document.querySelector('.user-input').value;
+  console.log(userInput)
 let result = await displayData(userInput)
 celcius.innerHTML = `${result.current.condition.text} ${result.current.temp_c}°C`
 cityName.innerHTML = `City: ${result.location.name}<br> Country: ${result.location.country}`
